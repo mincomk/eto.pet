@@ -1,5 +1,5 @@
 import { Card } from '../card/Card';
-import { boldValue, box, lightName, wrapperDiv } from './Stats.css';
+import { boldValue, box, lightName, wrapperDiv, cardBox } from './Stats.css';
 
 export interface StatsProps {
     stats: { name: string; value: string }[];
@@ -7,7 +7,7 @@ export interface StatsProps {
 
 export function Stats({ stats }: StatsProps) {
     return (
-        <Card title="STATS">
+        <Card title="STATS" className={cardBox}>
             <div className={box}>
                 {stats.map((stat) => (
                     <Stat name={stat.name} value={stat.value} />

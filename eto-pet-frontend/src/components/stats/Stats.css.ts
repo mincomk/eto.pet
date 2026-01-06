@@ -22,3 +22,11 @@ export const box = style({
     flexDirection: 'column',
     gap: vars.spacing.xs,
 });
+
+export const cardBox = style({
+    '@media': {
+        'screen and (max-width: 1440px)': {
+            width: '100%',
+        }
+    }
+})

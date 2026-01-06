@@ -9,6 +9,7 @@ export const mainStyle = style({
     '@media': {
         'screen and (max-width: 1440px)': {
             flexDirection: 'column',
+            padding: vars.spacing.sm
         },
     },
 });
@@ -21,6 +22,12 @@ export const leftBox = style({
     width: '100%',
     height: '100%',
     gap: vars.spacing.xl,
+    '@media': {
+        'screen and (max-width: 1440px)': {
+            padding: vars.spacing.sm,
+            gap: vars.spacing.md,
+        },
+    },
 });
 
 export const image = style({
@@ -46,4 +53,5 @@ export const redText = style({
 export const cardBox = style({
     display: 'flex',
     gap: vars.spacing.xs,
+    flexWrap: 'wrap',
 });
